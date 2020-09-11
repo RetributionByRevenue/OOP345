@@ -1,0 +1,57 @@
+/**********************************************************
+ * Name: stephane kamdem kamguia
+ * Student ID: 135736189
+ * Workshop5: part 2
+ * Seneca email: skamdem-kamguia@myseneca.ca
+ * Section: NAA
+ **********************************************************/
+
+ /*I have done all the coding by myself and only copied the code
+ that my professor provided to complete my workshops and assignments.*/
+
+
+In this workshop, I have a chance to practice the error handling by coding try-throw-catch, template, and lambda function.
+I have a lot of issues that caused difficulty for me in spellCheck module (constructor and checking error), in main for the 
+loading book, movie and the collection module. I asked help from friends and re-read the note to be able to fix these problems
+
+The difference between lambda function and a functor that functor requires a seperated class and it is more complex than lambda function. 
+Lambda function does not require class and it is simpler to use.
+
+The error from exception is caused because of the filename, if the user input the wrong filename or re-open the file in multiple times, 
+it might lead to that problem. Hence, we can create an array to store all filename and loop in that array to prevent the error.
+
+In my opinion, we can create a base class and making Movie and Book as its child class to avoid duplicate logic.
+
+Finally, I think the default constructor is necessary. We need to keep it for avoiding the unexpected error to affect the data. 
+Moreover, the way of design the code will affect directly to perform the program.Hence, the defaultl constructor is necessary 
+and should be kept it.
+
+Quiz 5 Reflection
+13. Code 5.0, Line 16 prints
+a. 100 100 100 100
+b. 16 2 77 29
+c. 4 4 4 4
+d. All of the above
+e. None of the above
+My answer: E None of the above
+Correct answer: A. 100 100 100 100
+
+
+
+15. Code 5.0, Line 22 prints
+a. 100 100 100 100
+b. 16 2 77 29
+c. 4 4 4 4
+d. All of the above
+e. None of the above
+My answer: A. 100 100 100 100
+Correct answer: E. None of the above
+
+19. Code 6.0, The output of line 7 is:
+a. 5
+b. 13
+c. 39
+d. 65
+e. 26
+My answer: B. 13
+Correct answer: C. 39

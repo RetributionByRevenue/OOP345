@@ -1,0 +1,38 @@
+/**********************************************************
+ * Name: stephane kamdem kamguia
+ * Student ID: 135736189
+ * Workshop: Workshop 1 part 2
+ * Seneca email: skamdem-kamguia@myseneca.ca
+ * Section: NAA
+ **********************************************************/
+
+In OOP345 Lab01, I was able to review some basic concepts that I had previously in OOP244. 
+Such concepts are default constructors, copy constructors, copy assignment, desconstructors, 
+working with arrays and pointers, and Classes.
+
+Additionally, I was able to review how to dynamically allocate as well as deallocating to prevent memory leaks. 
+New information that I obtained through this lab was the use of "static" and "extern" keywords. 
+
+Moreover, static is the keyword for Internal Linkage. This concept that indicates entity that is invisibile outside
+its translation unit but visible to other scopes within its unit. Since global variable has external 
+linkage by default, we use "static" to restrict it to the file containing its declaration. 
+(Example: static unsigned COUNTER = 0;) By assigning static to a variable, it allows the variable 
+to be only valid within the assigned scope.
+
+Futhermore, on the other hand, the keyword "extern" refers to Externally linked identifiers that are shared between translation units. 
+It took me a while to google what a translation unit was, but once I understood that, both external and internal 
+linkage made sense to me (translation unit = file containing source code. ie. .cpp).
+
+--- Quiz 1 Reflection ---
+
+ 3). Code 1.0 - The address printed in line 9 Main.cpp, is the same as the address printed in line 6 of unit_a.cpp
+Right Answer: YES
+My Answer: NO // this was a dump mistakes and there were 3 counter in the code but different addresses in different memory
+
+15). A generic pointer type is a pointer that is not associated with any particular type:
+Right Answer: YES
+My Answer: NO
+// as I understand the concept and know that the answer is YES but perhaps in my haste I read it incorrectly.
+
+
+

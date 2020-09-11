@@ -1,0 +1,43 @@
+/**********************************************************
+ * Name: stephane kamdem kamguia
+ * Student ID: 135736189
+ * Workshop3: part 2
+ * Seneca email: skamdem-kamguia@myseneca.ca
+ * Section: NAA
+ **********************************************************/
+
+ /*I have done all the coding by myself and only copied the code
+ that my professor provided to complete my workshops and assignments.*/
+
+
+1) The Reason for Specializing the 'Sum()' Member Function: for the string, 
+we needed a different format because we had to put a comma to seperate the string. 
+The way to add it was not generic therefore we had to specialize the function. 
+
+2) The Reason for Specializing the initial value for a summation: based on the data type,
+we need to initialize to different values. For a string, we need to initialize to 
+an empty string. For an int, we need to initialize to zero.
+
+3) The Reason for Defining the class variable outside the class definition: 
+when we use internal linkage ('static'), we define the class variable outside the class 
+definition so that it is visible to other scopes within its unit. All instances of the 
+same class share the same variable, thus when we set the variable outside the definition, 
+it will be available to all instances because it has global scope. 
+
+4) What I Learned: I learned how to inherit a template, how to use specialization, 
+and how to use polymorphism by making the base class function virtual and then redefining 
+it in the derived class. 
+
+5) What Was Difficult: I had a difficult time to figure out where to put the specialization. 
+Additionally, the syntax of the inheritance also took quite a bit of time to research and 
+re-read the class notes. How to access the base class member was also something I struggled 
+with in this class. Finally, debugging the 'static' variables consumed some time as well. 
+I solved all of these difficulties by re-reading over notes, looking at examples and snippets 
+online, as well as trial-and-error. 
+
+
+***QUIZ 3 REFLECTION***
+
+#5 In code 3.0, the main will print:
+Correct: C) None of the Above
+MY ANSWER: A) 5

@@ -1,0 +1,70 @@
+Script started on Thu 23 Jan 2020 04:39:33 PM EST
+==176995== Memcheck, a memory error detector
+==176995== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==176995== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==176995== Command: ws products.txt sales.txt
+==176995== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line:
+--------------------------
+  1: ws
+  2: products.txt
+  3: sales.txt
+--------------------------
+
+Individual Index Entries
+--------------------------
+Groceries   : tomatoes
+Electronics : computer
+Tools       : hammer
+Groceries   : lettuce
+Groceries   : potatoes
+Electronics : Multimedia_Player
+Electronics : HDD
+Groceries   : meat
+Tools       : jigsaw
+
+Collated Index Entries
+--------------------------
+      Tools: hammer, jigsaw
+  Groceries: tomatoes, lettuce, potatoes, meat
+ Electrnics: 
+Electronics: computer, Multimedia_Player, HDD
+
+Detail Ticket Sales
+--------------------------
+Student : 25
+Adult   : 13
+Student : 12
+Adult   : 6
+Student : 5
+Adult   : 15
+Adult   : 1
+Adult   : 2
+Adult   : 3
+Student : 1
+Student : 2
+Adult   : 5
+Adult   : 6
+
+Summary of Ticket Sales
+--------------------------
+Student Tickets  =   92.70
+  Adult Tickets  =  169.83
+ Senior Tickets  =    0.00
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==176995== 
+==176995== HEAP SUMMARY:
+==176995==     in use at exit: 0 bytes in 0 blocks
+==176995==   total heap usage: 21 allocs, 21 frees, 90,728 bytes allocated
+==176995== 
+==176995== All heap blocks were freed -- no leaks are possible
+==176995== 
+==176995== For counts of detected and suppressed errors, rerun with: -v
+==176995== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Thu 23 Jan 2020 04:39:34 PM EST

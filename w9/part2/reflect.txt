@@ -1,0 +1,36 @@
+/**********************************************************
+ * Name: stephane kamdem kamguia
+ * Student ID: 135736189
+ * Workshop9: part 2
+ * Seneca email: skamdem-kamguia@myseneca.ca
+ * Section: NAA
+ **********************************************************/
+// I confirm that the content of this file is created by me,
+// with the exception of the parts provided to me by my professor.
+
+
+On this workshop, I learned about multi threading and asynchronous execution, which are the division 
+of the work load in a program in separate, concurrent threads to be executed in the CPU. This means 
+that a task can be split in smaller parts and be executed at the same time at run time or that 
+multiple individual tasks can be executed at the same time. This speeds up processing and reduces 
+response and idle time.
+
+The use of binary files in this workshop was essential because it makes it easier to manipulate large
+amounts of data without the need to worry with character conversion or extraction. I achieved the use 
+of binary files by using the fstream object and passing the std::ios::binary mode when opening the file.
+
+I used 'fstream fs(file, std::ios::out|std::ios::binary);' to write to the file as binary.
+I used 'fstream fs(file, std::ios::in|std::ios::binary);' to read from a binary file.
+
+Binding a function to its arguments reduces code repetition and is useful when a function is being used 
+repeated times without changes in the parameters. This is usually used when multi threading a function 
+or when a function needs to be called from time to time, like a scheduled routine. In this workshop, 
+binding a function was useful because it makes the creation of threads simpler and less work intensive.
+
+Multi threading has the advantage of reducing response time when performing a task (or process), by having 
+said process being split into different threads running at the same time. This ensures that labor intensive 
+tasks, like loops and iterations, can be sped up greatly.
+
+- Quiz 07 Reflection: 
+
+I got 8/8.

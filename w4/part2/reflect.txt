@@ -1,0 +1,42 @@
+/**********************************************************
+ * Name: stephane kamdem kamguia
+ * Student ID: 135736189
+ * Workshop4: part 2
+ * Seneca email: skamdem-kamguia@myseneca.ca
+ * Section: NAA
+ **********************************************************/
+
+ /*I have done all the coding by myself and only copied the code
+ that my professor provided to complete my workshops and assignments.*/
+
+In this lab I learned how to work with compositions and aggregations. I had to go back and review how to write a move constructor and copy constructor in this lab. 
+These two functions were needed for my code because the main function required it. In general this lab wasn't very difficult but I did have some mild troubles with
+creating memory and figuring how to deallocate it without deleting the memory twice. 
+1) the difference between the implementations of a composition and an aggregation:
+Composition is where two classes have a "part-of" relationship which results in both being dependant on the other. 
+Once one of the entities reaches the end, the other does too. 
+Implementation: we allocate a class within another class. When the "parent" class ends/deconstructs, the "child" class
+will disappear as well because without its "parent" class, the child class doesn't exist. 
+
+
+An Aggregation however, is a "has-a" relationship. Either entity is able to be independant of one another. Therefore,
+when one class ends, the other class is still able to continue. 
+Implementation: we allocate a class outside of another class and then passes a pointer to the "parent" class. Since the
+two classes are independant of each other, even when we deallocate/deconstruct the "parent" class, the "child" class object
+still exists and is able to continue functioning. 
+
+2) the difference between the implementations of move and copy functions in a composition and an aggregation.
+Composition: copy and move function will be responsible for allocating and destroying the resources (destroying the resource only works for the move)
+Aggregation: copy and move function are not responsible for allocating and destroying the resources. It will only copy/move the pointer.
+
+
+***Quiz 4 Reflect ***
+
+Wrong Answers:
+19) Code 3.0, the output of line 7 is:
+Right:39
+Mine: 5
+
+24) The output of line 8 iss:
+Right: 2
+Mine: 5

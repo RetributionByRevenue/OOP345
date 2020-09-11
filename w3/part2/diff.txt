@@ -1,0 +1,14 @@
+In line number 17 of your output:
+The output should be:
+Individual Index Entries
+^
+But your output is: 
+==143438== Conditional jump or move depends on uninitialised value(s)
+^
+
+Unmatched character details:
+The character in column 1 is supposed to be:
+  [I] ASCII code(73)
+but you printed
+  [=] ASCII code(61)
+

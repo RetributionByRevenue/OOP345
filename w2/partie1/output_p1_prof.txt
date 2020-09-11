@@ -1,0 +1,58 @@
+Script started on Fri 22 May 2020 04:13:09 PM EDT
+==134235== Memcheck, a memory error detector
+==134235== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==134235== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==134235== Command: ws gutenberg_shakespeare
+==134235== 
+[38;5;9mBegin Testing the Program!
+--------------------------[0m
+
+Command Line:
+--------------------------
+  1: ws
+  2: gutenberg_shakespeare
+--------------------------
+
+  0-arg Constructor - a.size =       0 records ->   (a) Record    0: []
+                                                    (a) Record  100: []
+                                                    (a) Record 1000: []
+                                                    (a) Record last: []
+
+  1-arg Constructor - b.size = 1293934 records ->   (b) Record    0: [This]
+                                                    (b) Record  100: [USED]
+                                                    (b) Record 1000: [or]
+                                                    (b) Record last: [Shakespeare]
+
+  Copy Constructor  - c.size = 1293934 records ->   (c) Record    0: [This]
+                                                    (c) Record  100: [USED]
+                                                    (c) Record 1000: [or]
+                                                    (c) Record last: [Shakespeare]
+
+  Copy Assignment   - a.size = 1293934 records ->   (a) Record    0: [This]
+                                                    (a) Record  100: [USED]
+                                                    (a) Record 1000: [or]
+                                                    (a) Record last: [Shakespeare]
+
+--------------------------
+Execution Times:
+--------------------------
+  0-arg Constructor        542500 nanoseconds
+  1-arg Constructor    3271753156 nanoseconds
+  Copy Constructor      621027588 nanoseconds
+  Copy Assignment       618539689 nanoseconds
+  Destructor            202242298 nanoseconds
+--------------------------
+
+[38;5;9m------------------------
+End Testing the Program![0m
+==134235== 
+==134235== HEAP SUMMARY:
+==134235==     in use at exit: 0 bytes in 0 blocks
+==134235==   total heap usage: 6,032 allocs, 6,032 frees, 124,486,225 bytes allocated
+==134235== 
+==134235== All heap blocks were freed -- no leaks are possible
+==134235== 
+==134235== For lists of detected and suppressed errors, rerun with: -s
+==134235== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Fri 22 May 2020 04:13:14 PM EDT
